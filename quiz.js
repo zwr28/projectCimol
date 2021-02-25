@@ -51,7 +51,7 @@ let questions = [
         question : "Kenapa CHO melakukan ekseskusi refund <11k ketika ada anomali sistem ?",
         imgSrc : "img/js.png",
         choiceA : "Karena di SPLUNK pilihannya ada Rp 11.000 saja",
-        choiceB : "Karena sesuai SOP Penanganan Keluhan Pelanggan Terkait Ketidaksesuaian Tagihan atau Pemakaian (Adjustment atau Refund) Perorangan dan Massal melalui CTP. Batas wewenang untuk eksekusi refund Rp. 11.000",
+        choiceB : "Karena sesuai SOP. Batas wewenang untuk eksekusi refund CHO Rp. 11.000",
         choiceC : "Karena di DSC tertera maksimal refund Rp. 11.000",
         correct : "B"
     },{
