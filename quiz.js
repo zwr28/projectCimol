@@ -5,7 +5,6 @@ const question = document.getElementById("question");
 const qImg = document.getElementById("qImg");
 const choiceA = document.getElementById("A");
 const choiceB = document.getElementById("B");
-const choiceC = document.getElementById("C");
 const counter = document.getElementById("counter");
 const timeGauge = document.getElementById("timeGauge");
 const progress = document.getElementById("progress");
@@ -13,74 +12,64 @@ const scoreDiv = document.getElementById("scoreContainer");
 // create our questions
 let questions = [
     {
-        question : "Jika pelanggan mengeluhkan untuk kendala transaksi NGRS dan tidak muncul di aplikasi NGRS. Apa yang CHO lakukan?",
+        question : "Jika pelanggan mengeluhkan untuk kendala transaksi NGRS dan tidak muncul di aplikasi NGRS. CHO akan melakukan eskalasi ke IT",
         imgSrc : "img/NGRS.png",
-        choiceA : "CHO melakukan eskalasi ke IT",
-        choiceB : "CHO akan closing tiket langsung",
-        choiceC : "CHO membiarkan case tersebut",
+        choiceA : "BENAR",
+        choiceB : "SALAH",
         correct : "A"
     },{
-        question : "Apa yang dilakukan CHO ketika case network sinyal lemah tidak stabil sudah ada hasil dari tim Network ?",
+        question : "Ketika case network sinyal lemah tidak stabil sudah ada hasil dari tim Network. CHO langsung menutup case tanpa konfirmasi ke pelanggan",
         imgSrc : "img/Network.png",
-        choiceA : "Langsung menutup case tanpa konfirmasi ke pelanggan",
-        choiceB : "Membiarkan case tersebut",
-        choiceC : "Melakukan Callback untuk menginfokan hasil dari tim network",
-        correct : "C"
+        choiceA : "BENAR",
+        choiceB : "SALAH",
+        correct : "B"
     },{
-        question : "Siapa yang menerima laporan koordinasi ketika ada case migrasi belum aktif ?",
+        question : "Yang menerima laporan koordinasi ketika ada case migrasi belum aktif adalah Tim OBC",
         imgSrc : "img/KartuHalo.png",
-        choiceA : "OBC",
-        choiceB : "Tim Network",
-        choiceC : "IT",
+        choiceA : "BENAR",
+        choiceB : "SALAH",
         correct : "A"
     },{
-        question : "CHO menggunakan aplikasi apa untuk melakukan ekseskusi refund <11k ?",
+        question : "Aplikasi untuk melakukan ekseskusi refund <11k oleh CHO adalah INDIRA",
         imgSrc : "img/Refund.png",
-        choiceA : "SPLUNK",
-        choiceB : "INDIRA",
-        choiceC : "DSC",
-        correct : "C"
+        choiceA : "BENAR",
+        choiceB : "SALAH",
+        correct : "B"
     },{
-        question : "Ketika kondisi apa CHO melakukan koordinasi ke grapari mengenai case ganti kartu ?",
+        question : "CHO akan melakukan koordinasi ke grapari jika pelanggan tidak valid untuk ganti kartu",
         imgSrc : "img/GantiKartu.png",
-        choiceA : "Jika pelanggan dianggap tidak valid untuk ganti kartu oleh CHO",
-        choiceB : "Jika pelanggan sudah dianggap valid untuk ganti kartu oleh CHO",
-        choiceC : "Jika CHO sudah menerima laporan dari agent ecare / IBC",
+        choiceA : "BENAR",
+        choiceB : "SALAH",
         correct : "B"
     },{
-        question : "Kenapa CHO melakukan ekseskusi refund <11k ketika ada anomali sistem ?",
+        question : "CHO melakukan ekseskusi refund <11k ketika ada anomali sistem",
         imgSrc : "img/Refund.png",
-        choiceA : "Karena di SPLUNK pilihannya ada Rp 11.000 saja",
-        choiceB : "Karena sesuai SOP. Batas wewenang untuk eksekusi refund CHO Rp. 11.000",
-        choiceC : "Karena di DSC tertera maksimal refund Rp. 11.000",
-        correct : "B"
+        choiceA : "BENAR",
+        choiceB : "SALAH",
+        correct : "A"
     },{
-        question : "Apa kepanjangan dari CIMOL ?",
+        question : "Kepanjangan dari CIMOL adalah Complaint handlIng fOr Maximum sOLution",
         imgSrc : "img/Cimol.png",
-        choiceA : "Complaint handlIng fOr Minimalis sOLution",
-        choiceB : "Complaint handlIng fOr Minimum sOLution",
-        choiceC : "Complaint handlIng fOr Maximum sOLution",
-        correct : "C"
+        choiceA : "BENAR",
+        choiceB : "SALAH",
+        correct : "A"
     },{
         question : "Penyanyi luar negeri yang suka sepeda’an ?",
         imgSrc : "img/Sepeda.png",
         choiceA : "Selena Gowes",
         choiceB : "Justin Bieber",
-        choiceC : "Rihanna",
         correct : "A"
     },{
         question : "Buah apa yang paling kaya?",
         imgSrc : "img/Buah.png",
         choiceA : "Mangga",
-        choiceB : "Semangka",
-        choiceC : "Sri Kaya",
-        correct : "C"
+        choiceB : "Sri Kaya",
+        correct : "B"
     },{
         question : "Siapa nama lengkap SPV CHO?",
-        imgSrc : "img/js.png",
+        imgSrc : "img/SPV.png",
         choiceA : "Anjar Kesumaraharjo",
-        choiceB : "Anjar Kusumaraharjo",
-        choiceC : "Anjar Kesuma Raharjo",
+        choiceB : "Anjar Kesuma Raharjo",
         correct : "A"
     }
 ];
@@ -101,7 +90,6 @@ function renderQuestion(){
     qImg.innerHTML = "<img src="+ q.imgSrc +">";
     choiceA.innerHTML = q.choiceA;
     choiceB.innerHTML = q.choiceB;
-    choiceC.innerHTML = q.choiceC;
 }
 start.addEventListener("click",startQuiz);
 // start quiz
