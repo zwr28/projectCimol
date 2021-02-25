@@ -56,7 +56,7 @@ let questions = [
         correct : "B"
     },{
         question : "Apa kepanjangan dari CIMOL ?",
-        imgSrc : "img/js.png",
+        imgSrc : "img/Cimol.png",
         choiceA : "Complaint handlIng fOr Minimalis sOLution",
         choiceB : "Complaint handlIng fOr Minimum sOLution",
         choiceC : "Complaint handlIng fOr Maximum sOLution",
@@ -72,7 +72,7 @@ let questions = [
         question : "Buah apa yang paling kaya?",
         imgSrc : "img/Buah.png",
         choiceA : "Mangga",
-        choiceB : "Mangga",
+        choiceB : "Semangka",
         choiceC : "Sri Kaya",
         correct : "C"
     },{
@@ -183,5 +183,5 @@ function scoreRender(){
               "img/1.png";
     
     scoreDiv.innerHTML = "<img src="+ img +">";
-    scoreDiv.innerHTML += "<p>"+ scorePerCent +"%</p>";
+    scoreDiv.innerHTML += "<p>" + "Nilai Kamu " + scorePerCent +"%</p>";
 }
