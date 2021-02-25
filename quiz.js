@@ -13,75 +13,75 @@ const scoreDiv = document.getElementById("scoreContainer");
 // create our questions
 let questions = [
     {
-        question : "Apakah ini simbol dari HTML5?",
+        question : "Jika pelanggan mengeluhkan untuk kendala transaksi NGRS dan tidak muncul di aplikasi NGRS. Apa yang CHO lakukan?",
         imgSrc : "img/html.png",
-        choiceA : "Benar",
-        choiceB : "Salah",
-        choiceC : "Salah",
+        choiceA : "CHO melakukan eskalasi ke IT",
+        choiceB : "CHO akan closing tiket langsung",
+        choiceC : "CHO membiarkan case tersebut",
         correct : "A"
     },{
-        question : "Apakah ini simbol dari CSS3?",
+        question : "Apa yang dilakukan CHO ketika case network sinyal lemah tidak stabil sudah ada hasil dari tim Network ?",
         imgSrc : "img/css.png",
-        choiceA : "Salah",
-        choiceB : "Benar",
-        choiceC : "Salah",
+        choiceA : "Langsung menutup case tanpa konfirmasi ke pelanggan",
+        choiceB : "Membiarkan case tersebut",
+        choiceC : "Melakukan Callback untuk menginfokan hasil dari tim network",
+        correct : "C"
+    },{
+        question : "Siapa yang menerima laporan koordinasi ketika ada case migrasi belum aktif ?",
+        imgSrc : "img/js.png",
+        choiceA : "OBC",
+        choiceB : "Tim Network",
+        choiceC : "IT",
+        correct : "A"
+    },{
+        question : "CHO menggunakan aplikasi apa untuk melakukan ekseskusi refund <11k ?",
+        imgSrc : "img/js.png",
+        choiceA : "SPLUNK",
+        choiceB : "INDIRA",
+        choiceC : "DSC",
+        correct : "C"
+    },{
+        question : "Ketika kondisi apa CHO melakukan koordinasi ke grapari mengenai case ganti kartu ?",
+        imgSrc : "img/js.png",
+        choiceA : "Jika pelanggan dianggap tidak valid untuk ganti kartu oleh CHO",
+        choiceB : "Jika pelanggan sudah dianggap valid untuk ganti kartu oleh CHO",
+        choiceC : "Jika CHO sudah menerima laporan dari agent ecare / IBC",
         correct : "B"
     },{
-        question : "Apakah ini simbol dari JavaScript?",
+        question : "Kenapa CHO melakukan ekseskusi refund <11k ketika ada anomali sistem ?",
         imgSrc : "img/js.png",
-        choiceA : "Salah",
-        choiceB : "Salah",
-        choiceC : "Benar",
+        choiceA : "Karena di SPLUNK pilihannya ada Rp 11.000 saja",
+        choiceB : "Karena sesuai SOP Penanganan Keluhan Pelanggan Terkait Ketidaksesuaian Tagihan atau Pemakaian (Adjustment atau Refund) Perorangan dan Massal melalui CTP. Batas wewenang untuk eksekusi refund Rp. 11.000",
+        choiceC : "Karena di DSC tertera maksimal refund Rp. 11.000",
+        correct : "B"
+    },{
+        question : "Apa kepanjangan dari CIMOL ?",
+        imgSrc : "img/js.png",
+        choiceA : "Complaint handlIng fOr Minimalis sOLution",
+        choiceB : "Complaint handlIng fOr Minimum sOLution",
+        choiceC : "Complaint handlIng fOr Maximum sOLution",
         correct : "C"
     },{
-        question : "Apakah ini simbol dari JavaScript?",
+        question : "Penyanyi luar negeri yang suka sepeda’an ?",
         imgSrc : "img/js.png",
-        choiceA : "Salah",
-        choiceB : "Salah",
-        choiceC : "Benar",
+        choiceA : "Selena Gowes",
+        choiceB : "Justin Bieber",
+        choiceC : "Rihanna",
+        correct : "A"
+    },{
+        question : "Buah apa yang paling kaya?",
+        imgSrc : "img/js.png",
+        choiceA : "Mangga",
+        choiceB : "Mangga",
+        choiceC : "Sri Kaya",
         correct : "C"
     },{
-        question : "Apakah ini simbol dari JavaScript?",
+        question : "Siapa nama lengkap SPV CHO?",
         imgSrc : "img/js.png",
-        choiceA : "Salah",
-        choiceB : "Salah",
-        choiceC : "Benar",
-        correct : "C"
-    },{
-        question : "Apakah ini simbol dari JavaScript?",
-        imgSrc : "img/js.png",
-        choiceA : "Salah",
-        choiceB : "Salah",
-        choiceC : "Benar",
-        correct : "C"
-    },{
-        question : "Apakah ini simbol dari JavaScript?",
-        imgSrc : "img/js.png",
-        choiceA : "Salah",
-        choiceB : "Salah",
-        choiceC : "Benar",
-        correct : "C"
-    },{
-        question : "Apakah ini simbol dari JavaScript?",
-        imgSrc : "img/js.png",
-        choiceA : "Salah",
-        choiceB : "Salah",
-        choiceC : "Benar",
-        correct : "C"
-    },{
-        question : "Apakah ini simbol dari JavaScript?",
-        imgSrc : "img/js.png",
-        choiceA : "Salah",
-        choiceB : "Salah",
-        choiceC : "Benar",
-        correct : "C"
-    },{
-        question : "Apakah ini simbol dari JavaScript?",
-        imgSrc : "img/js.png",
-        choiceA : "Salah",
-        choiceB : "Salah",
-        choiceC : "Benar",
-        correct : "C"
+        choiceA : "Anjar Kesumaraharjo",
+        choiceB : "Anjar Kusumaraharjo",
+        choiceC : "Anjar Kesuma Raharjo",
+        correct : "A"
     }
 ];
 // create some variables
