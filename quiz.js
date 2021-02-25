@@ -14,42 +14,42 @@ const scoreDiv = document.getElementById("scoreContainer");
 let questions = [
     {
         question : "Jika pelanggan mengeluhkan untuk kendala transaksi NGRS dan tidak muncul di aplikasi NGRS. Apa yang CHO lakukan?",
-        imgSrc : "img/html.png",
+        imgSrc : "img/NGRS.png",
         choiceA : "CHO melakukan eskalasi ke IT",
         choiceB : "CHO akan closing tiket langsung",
         choiceC : "CHO membiarkan case tersebut",
         correct : "A"
     },{
         question : "Apa yang dilakukan CHO ketika case network sinyal lemah tidak stabil sudah ada hasil dari tim Network ?",
-        imgSrc : "img/css.png",
+        imgSrc : "img/Network.png",
         choiceA : "Langsung menutup case tanpa konfirmasi ke pelanggan",
         choiceB : "Membiarkan case tersebut",
         choiceC : "Melakukan Callback untuk menginfokan hasil dari tim network",
         correct : "C"
     },{
         question : "Siapa yang menerima laporan koordinasi ketika ada case migrasi belum aktif ?",
-        imgSrc : "img/js.png",
+        imgSrc : "img/KartuHalo.png",
         choiceA : "OBC",
         choiceB : "Tim Network",
         choiceC : "IT",
         correct : "A"
     },{
         question : "CHO menggunakan aplikasi apa untuk melakukan ekseskusi refund <11k ?",
-        imgSrc : "img/js.png",
+        imgSrc : "img/Refund.png",
         choiceA : "SPLUNK",
         choiceB : "INDIRA",
         choiceC : "DSC",
         correct : "C"
     },{
         question : "Ketika kondisi apa CHO melakukan koordinasi ke grapari mengenai case ganti kartu ?",
-        imgSrc : "img/js.png",
+        imgSrc : "img/GantiKartu.png",
         choiceA : "Jika pelanggan dianggap tidak valid untuk ganti kartu oleh CHO",
         choiceB : "Jika pelanggan sudah dianggap valid untuk ganti kartu oleh CHO",
         choiceC : "Jika CHO sudah menerima laporan dari agent ecare / IBC",
         correct : "B"
     },{
         question : "Kenapa CHO melakukan ekseskusi refund <11k ketika ada anomali sistem ?",
-        imgSrc : "img/js.png",
+        imgSrc : "img/Refund.png",
         choiceA : "Karena di SPLUNK pilihannya ada Rp 11.000 saja",
         choiceB : "Karena sesuai SOP. Batas wewenang untuk eksekusi refund CHO Rp. 11.000",
         choiceC : "Karena di DSC tertera maksimal refund Rp. 11.000",
@@ -63,14 +63,14 @@ let questions = [
         correct : "C"
     },{
         question : "Penyanyi luar negeri yang suka sepeda’an ?",
-        imgSrc : "img/js.png",
+        imgSrc : "img/Sepeda.png",
         choiceA : "Selena Gowes",
         choiceB : "Justin Bieber",
         choiceC : "Rihanna",
         correct : "A"
     },{
         question : "Buah apa yang paling kaya?",
-        imgSrc : "img/js.png",
+        imgSrc : "img/Buah.png",
         choiceA : "Mangga",
         choiceB : "Mangga",
         choiceC : "Sri Kaya",
