@@ -132,6 +132,7 @@ body{
     position: absolute;
     top:100px;
     left:325px;
+    text-align: center;
 }
 #scoreContainer p{
     position: absolute;
