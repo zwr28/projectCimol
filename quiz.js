@@ -12,34 +12,64 @@ const scoreDiv = document.getElementById("scoreContainer");
 // create our questions
 let questions = [
     {
-        question : "Kepanjangan dari CIMOL adalah Complaint handlIng fOr Max sOLution",
-        imgSrc : "img/Cimol.png",
-        choiceA : "BENAR",
-        choiceB : "SALAH",
-        correct : "B"
-    },{
         question : "CHO mengerjakan juga case 357",
+        imgSrc : "img/NGRS.png",
+        choiceA : "BENAR",
+        choiceB : "SALAH",        
+        correct : "A"
+    },{
+        question : "Jika pelanggan mengeluhkan untuk kendala transaksi NGRS dan tidak muncul di aplikasi NGRS. CHO akan melakukan eskalasi ke IT",
         imgSrc : "img/NGRS.png",
         choiceA : "BENAR",
         choiceB : "SALAH",
         correct : "A"
     },{
-        question : "Nama lengkap SPV cho  adalah Anjar Kesumaraharjo",
-        imgSrc : "img/SPV.png",
+        question : "Ketika case network sinyal lemah tidak stabil sudah ada hasil dari tim Network. CHO langsung menutup case tanpa konfirmasi ke pelanggan",
+        imgSrc : "img/Network.png",
+        choiceA : "BENAR",
+        choiceB : "SALAH",
+        correct : "B"
+    },{
+        question : "Yang menerima laporan koordinasi ketika ada case migrasi belum aktif adalah Tim OBC",
+        imgSrc : "img/KartuHalo.png",
         choiceA : "BENAR",
         choiceB : "SALAH",
         correct : "A"
     },{
-        question : "Jika ada anomali pada nomor pelanggan maka  case bisa langsung di closed",
+        question : "Aplikasi untuk melakukan ekseskusi refund <11k oleh CHO adalah INDIRA",
         imgSrc : "img/Refund.png",
         choiceA : "BENAR",
         choiceB : "SALAH",
         correct : "B"
     },{
-        question : "TL CHO ada 5 orang",
-        imgSrc : "img/GantiKartu.png",
+        question : "CHO melakukan ekseskusi refund <11k ketika ada anomali sistem",
+        imgSrc : "img/Refund.png",
         choiceA : "BENAR",
         choiceB : "SALAH",
+        correct : "A"
+    },{
+        question : "Kepanjangan dari CIMOL adalah Complaint handlIng fOr Maximum sOLution",
+        imgSrc : "img/Cimol.png",
+        choiceA : "BENAR",
+        choiceB : "SALAH",
+        correct : "A"
+    },{
+        question : "Penyanyi luar negeri yang suka sepeda’an ?",
+        imgSrc : "img/Sepeda.png",
+        choiceA : "Selena Gowes",
+        choiceB : "Agnez Mo",
+        correct : "A"
+    },{
+        question : "Buah apa yang paling kaya?",
+        imgSrc : "img/Buah.png",
+        choiceA : "Mangga",
+        choiceB : "Sri Kaya",
+        correct : "B"
+    },{
+        question : "Siapa nama lengkap SPV CHO?",
+        imgSrc : "img/SPV.png",
+        choiceA : "Anjar Kesumaraharjo",
+        choiceB : "Anjar Kesuma Raharjo",
         correct : "A"
     }
 ];
@@ -47,7 +77,7 @@ let questions = [
 const lastQuestion = questions.length - 1;
 let runningQuestion = 0;
 let count = 0;
-const questionTime = 10; // 10s
+const questionTime = 10000; // 10s
 const gaugeWidth = 150; // 150px
 const gaugeUnit = gaugeWidth / questionTime;
 let TIMER;
