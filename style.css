@@ -12,6 +12,13 @@ body{
     box-shadow: 0px 5px 15px 0px;
     position: relative;
 }
+#logo img {
+    height: 65px;
+    width: 315px;
+    right: 490px;
+    position: absolute;
+    top: 590px;
+}
 #start{
     font-size: 1.5em;
     font-weight: bolder;
@@ -24,51 +31,70 @@ body{
     position: absolute;
     left:500px;
     top:300px;
-    color : #62A1E6;
+    color : black;
     text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
     border-radius: 5px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.5);    
+}
+#start p {
+    animation: blink-animation 1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+    position: absolute;
+    top: -25px;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
 #start:hover{
     border: 3px solid black;
-    color : black;
+    color : #62A1E6;
 }
-#qImg{
-    width : 400px;
-    height : 400px;
+#qImg {
+    width: 300px;
+    height: 300px;
     position: absolute;
-    left : 0px;
-    top : 0px;
+    left: 490px;
+    top: 0px;
 }
 #qImg img{
-    width : 400px;
-    height : 400px;
+    width : 300px;
+    height : 300px;
     border-radius: 5px;
 }
-#question{
-    width: 850px;
-    height : 125px;
+#question {
+    width: 830px;
+    height: 125px;
     position: absolute;
-    right:0;
-    top:150px;    
+    right: 200px;
+    top: 325px;
 }
 #question p{
-    width: 775px;
-    background-color: white;
-    margin : 0;
-    padding : 15px;
+    width: 740px;
+    margin: 0;
+    padding: 15px;
     font-size: 1.25em;
-    color:black;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.23);
     border-radius: 5px;
 }
-#choices{
-    width : 310px;
+#choices {
+    width: 310px;
     position: absolute;
-    right : 290px;
-    top : 350px;
-    padding : 10px;
-    color:white;
+    right: 480px;
+    top: 495px;
+    padding: 10px;
+    color: white;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    background-color: rgba(0, 0, 0, 0.23);
+    border-radius: 5px;
 }
 .choice{
     display: inline-block;
@@ -81,8 +107,7 @@ body{
     background-color: #D4546A;
 }
 .choice:hover{
-    border : 2px solid black;
-    font-weight: bold;
+    opacity: 0.8;
 }
 #timer{
     position: absolute;
